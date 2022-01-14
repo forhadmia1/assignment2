@@ -129,6 +129,18 @@ nav>ul>li>a{
     font-size: 14px;
     margin-top: 20px;
 }
+.collection-btn{
+    text-align: right;
+    margin-top: 20px;
+}
+.collection-btn .fas{
+    padding-left: 10px;
+}
+.collection-btn a,fas{
+    text-decoration: none;
+    color:#E02C6D;
+
+}
 /* footer styles */
 footer{
     background-color: #0A0826;
