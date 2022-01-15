@@ -293,6 +293,9 @@ footer {
         flex-direction: column-reverse;
         margin-top: 40px;
     }
+    .hero-info{
+        margin-top: 40px;
+    }
     .hero-img > img {
         width: 80%;
         position: relative;
@@ -331,6 +334,9 @@ footer {
     .collections {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+    }
+    .collection-btn{
+        margin-right: 20px;
     }
     .contact-section {
         flex-direction: column-reverse;
