@@ -241,6 +241,9 @@ footer{
   Mobile responsive styles
 ========================== */
 @media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
     nav{
         justify-content: center;
     }
@@ -248,13 +251,12 @@ footer{
         display: none;
     }
     .hero-area{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    .hero-img{
-        order: 1;
+    .hero-img>img{
+        width: 80%;
     }
     .hero-info{
-        order: 2;
         text-align: center;
     }
     .title{
@@ -289,9 +291,52 @@ footer{
     }
     .social-icon>.fab{
         margin-right: 10px;
+    }   
+}
+/*================================
+     Tablet responsive styles
+=================================== */
+@media only screen and (min-width:689px) and (max-width:992px){
+    nav{
+        justify-content: space-around;
     }
-    /* .hero-area,.company-logo,.popular-collection,.contact-section,footer{
-        display: none;
-    } */
+    nav>ul>li>a{
+       
+    }
+    .container{
+        width: 100%;
+    }
+    .hero-area{
+        margin:80px 20px;
+    }
     
+    .title{
+        font-size: 30px;
+    }
+    .hero-img>img{
+        width: 80%;
+    }
+    .logo{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .collection-btn{
+        margin-right: 28px;
+        font-size: 20px;
+    }
+    .contact-section{
+        margin: 50px 20px;
+    }
+    .feature-img>img{
+        width: 90%;
+    }
+    .signup-btn{
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+ 
 }
