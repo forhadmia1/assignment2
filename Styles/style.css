@@ -91,16 +91,16 @@ nav > ul > li > a {
         left: 0;
     }
     25% {
-        top: 30px;
-        left: 60px;
+        top: 20px;
+        left: 40px;
     }
     50% {
-        top: 60px;
+        top: 40px;
         left: 0;
     }
     75% {
-        top: 30px;
-        left: -60px;
+        top: 20px;
+        left: -40px;
     }
     100% {
         top: 0;
@@ -298,23 +298,9 @@ footer {
     }
     .hero-img > img {
         width: 80%;
-        position: relative;
-        animation: up-down 2s linear 0.3s infinite;
-        animation-play-state: running;
     }
-    @keyframes up-down {
-        0% {
-            top: 0;
-            left: 0;
-        }
-        50% {
-            top: 20px;
-            left: 0;
-        }
-        100% {
-            top: 0;
-            left: 0;
-        }
+    .hero-img:hover img{
+        animation: none;
     }
     .hero-info {
         text-align: center;
