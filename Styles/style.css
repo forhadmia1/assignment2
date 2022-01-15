@@ -156,35 +156,6 @@ nav>ul>li>a{
     color:#E02C6D;
 
 }
-/* footer styles */
-footer{
-    background-color: #0A0826;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-info{
-    color: #FFFFFF;
-    text-align: center;
-    padding: 30px 0;
-}
-.footer-info>p{
-    color: #D9DBE1;
-}
-.footer-title{
-    font-size: 24px;
-}
-.social-icon{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.social-icon>.fab{
-    background-color:rgba(0, 0, 0, 0.473);
-    padding: 10px;
-    font-size: 25px;
-    border-radius: 15px;
-}
 /* contact section style */
 .contact-section{
     display: flex;
@@ -235,6 +206,35 @@ footer{
 }
 .feature-img:hover div{
     left: 150px;
+}
+/* footer styles */
+footer{
+    background-color: #0A0826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info{
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer-info>p{
+    color: #D9DBE1;
+}
+.footer-title{
+    font-size: 24px;
+}
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-icon>.fab{
+    background-color:rgba(0, 0, 0, 0.473);
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 15px;
 }
 
 /* =======================
@@ -294,14 +294,15 @@ footer{
     }   
 }
 /*================================
-     Tablet responsive styles
+     Tab responsive styles
 =================================== */
 @media only screen and (min-width:689px) and (max-width:992px){
     nav{
-        justify-content: space-around;
+        justify-content:space-between;
+        margin: 0 20px;
     }
     nav>ul>li>a{
-       
+        padding: 10px;
     }
     .container{
         width: 100%;
