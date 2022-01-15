@@ -218,6 +218,8 @@ footer{
     flex: 1;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .feature-img>img{
     width: 100%;
@@ -233,4 +235,63 @@ footer{
 }
 .feature-img:hover div{
     left: 150px;
+}
+
+/* =======================
+  Mobile responsive styles
+========================== */
+@media only screen and (max-width:688px) {
+    nav{
+        justify-content: center;
+    }
+    nav>ul{
+        display: none;
+    }
+    .hero-area{
+        flex-direction: column;
+    }
+    .hero-img{
+        order: 1;
+    }
+    .hero-info{
+        order: 2;
+        text-align: center;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .hero-info>p{
+        font-size: 14px;
+    }
+    .logo{
+        flex-wrap: wrap;
+    }
+    .logo>img{
+        padding:5px 0;
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+   .contact-section{
+       flex-direction: column-reverse;
+       padding: 0 20px;
+   }
+   .contact-form{
+       margin-top: 20px;
+   }
+   .signup-btn{
+       margin-top: 20px;
+       border-radius: 5px;
+   }  
+    .social-icon{
+        justify-content: center;
+    }
+    .social-icon>.fab{
+        margin-right: 10px;
+    }
+    /* .hero-area,.company-logo,.popular-collection,.contact-section,footer{
+        display: none;
+    } */
+    
 }
