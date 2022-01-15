@@ -188,7 +188,7 @@ nav > ul > li > a {
 .collection-btn .fas {
     padding-left: 10px;
 }
-.collection-btn a,.fas {
+.collection-btn a {
   text-decoration: none;
   color: #e02c6d;
 }
